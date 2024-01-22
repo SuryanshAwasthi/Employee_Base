@@ -10,7 +10,7 @@ This is the dfolder structure
 
 EMPSTORE
 |
-|___app.py
+|___app.py 
 |__models.py
 |__templates
    |__createpage.html
