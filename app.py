@@ -1,9 +1,10 @@
 from flask import Flask, abort,render_template,request,redirect
 from models import db,EmployeeModel
+import psycopg2
  
 app = Flask(__name__)
  
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://default:ckE5So4RDmIK@ep-little-forest-480166.us-east-1.postgres.vercel-storage.com:5432/verceldb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
  
